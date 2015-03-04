@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<testset name="unary_ops_pass">
+		<result>1</result>
+		<snippet>
+			int i = 0;
+			++i;
+		</snippet>
+		<snippet>
+			int i = 0;
+			i++;
+		</snippet>
+		<snippet>
+			int i = 0;
+			--i;
+		</snippet>
+		<snippet>
+			int i = 0;
+			i--;
+		</snippet>
+		<snippet>
+			int i = 0;
+			-i;
+		</snippet>
+		<snippet>
+			int i = 0;
+			+i;
+		</snippet>
+		<snippet>
+			int i = 0;
+			!i;
+		</snippet>
+	</testset>
+	<testset name="binary_ops_pass">
+		<result>1</result>
+		<snippet>
+			int i = 0;
+			i = i + 1;
+		</snippet>
+		<snippet>
+			int i = 0;
+			i = i - 1;
+		</snippet>
+		<snippet>
+			int i = 0;
+			i = i * 2;
+		</snippet>
+		<snippet>
+			int i = 2;
+			i = i % 2;
+		</snippet>
+	</testset>
+	<testset name="bitwise_ops_pass">
+		<snippet>
+			int i = 2;
+			int j = 1;
+			int k = i &amp; j;
+		</snippet>
+				<snippet>
+			int i = 2;
+			int j = 1;
+			int k = i | j;
+		</snippet>
+		<snippet>
+			int i = 2;
+			int j = 1;
+			int k = i ^ j;
+		</snippet>
+		<snippet>
+			uint i = 2;
+			uint j = 1;
+			uint k = i &amp; j;
+		</snippet>
+				<snippet>
+			uint i = 2;
+			uint j = 1;
+			uint k = i | j;
+		</snippet>
+		<snippet>
+			uint i = 2;
+			uint j = 1;
+			uint k = i ^ j;
+		</snippet>
+	</testset>
+	<testset name="bitwise_ops_fail">
+		<result>0</result>
+		<snippet>
+			float i = 2;
+			float j = 1;
+			float k = i &amp; j;
+		</snippet>
+				<snippet>
+			float i = 2;
+			float j = 1;
+			float k = i | j;
+		</snippet>
+		<snippet>
+			float i = 2;
+			float j = 1;
+			float k = i ^ j;
+		</snippet>
+		<snippet>
+			double i = 2;
+			double j = 1;
+			double k = i &amp; j;
+		</snippet>
+				<snippet>
+			double i = 2;
+			double j = 1;
+			double k = i | j;
+		</snippet>
+		<snippet>
+			double i = 2;
+			double j = 1;
+			double k = i ^ j;
+		</snippet>
+		<snippet>
+			half i = 2;
+			half j = 1;
+			half k = i &amp; j;
+		</snippet>
+				<snippet>
+			half i = 2;
+			half j = 1;
+			half k = i | j;
+		</snippet>
+		<snippet>
+			half i = 2;
+			half j = 1;
+			half k = i ^ j;
+		</snippet>
+	</testset>
+</root>

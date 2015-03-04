@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Slang Library</Name>
+  <Header>namespace tycho
+{
+namespace slang
+{
+
+    $(ClassDef)
+
+} // end namespace
+} // end namespace</Header>
+  <Source>namespace tycho
+{
+namespace slang
+{
+
+    //--------------------------------------------------------------------
+
+
+
+    //--------------------------------------------------------------------
+
+
+} // end namespace
+} // end namespace</Source>
+  <TestCase />
+  <SrcDir>./</SrcDir>
+  <IncDir>./</IncDir>
+  <TestsDir>tests</TestsDir>
+  <HdrIncludes>#include "slang/slang_abi.h"
+#include "slang/forward_decls.h"
+</HdrIncludes>
+  <SrcIncludes />
+  <ABI>TYCHO_SLANG_ABI</ABI>
+</ProjectSettings>

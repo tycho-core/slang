@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<testset name="basic_type_decls">
+	<result>1</result>
+	<!-- basic types -->
+	<snippet>double t;</snippet>
+	<snippet>float t;</snippet>
+	<snippet>half t;</snippet>
+	<snippet>int t;</snippet>
+	<snippet>uint t;</snippet>
+	<snippet>bool t;</snippet>
+	<snippet>texture t;</snippet>
+	<snippet>pixelshader t;</snippet>
+	<snippet>vertexshader t;</snippet>
+	<snippet>string t;</snippet>
+	<!-- dx8 compatability types -->
+	<snippet>FLOAT t;</snippet>
+	<snippet>PIXELSHADER t;</snippet>
+	<snippet>VERTEXSHADER t;</snippet>
+	<snippet>TEXTURE t;</snippet>
+	<snippet>STRING t;</snippet>
+	<snippet>VECTOR t;</snippet>
+	<snippet>MATRIX t;</snippet>
+	<!-- 1 element vectors -->
+	<snippet>vector &lt;bool, 1&gt; t;</snippet>
+	<snippet>bool1 t; </snippet>
+	<snippet>vector &lt;int, 1&gt;  t;</snippet>
+	<snippet>int1 t;</snippet>
+	<snippet>vector &lt;uint, 1&gt; t;</snippet>
+	<snippet>uint1 t;</snippet>
+	<snippet>vector &lt;half, 1&gt; t;</snippet>
+	<snippet>half1 t;</snippet>
+	<snippet>vector &lt;float, 1&gt; t;</snippet>
+	<snippet>float1 t;</snippet>
+	<snippet>vector &lt;double, 1&gt; t;</snippet>
+	<snippet>double1 t;</snippet>
+	<!-- 2 element vectors -->
+	<snippet>vector &lt;bool, 2&gt; t;</snippet>
+	<snippet>bool2 t; </snippet>
+	<snippet>vector &lt;int, 2&gt;  t;</snippet>
+	<snippet>int2 t;</snippet>
+	<snippet>vector &lt;uint, 2&gt; t;</snippet>
+	<snippet>uint2 t;</snippet>
+	<snippet>vector &lt;half, 2&gt; t;</snippet>
+	<snippet>half2 t;</snippet>
+	<snippet>vector &lt;float, 2&gt; t;</snippet>
+	<snippet>float1 t;</snippet>
+	<snippet>vector &lt;double, 2&gt; t;</snippet>
+	<snippet>double2 t;</snippet>
+	<!-- 3 element vectors -->
+	<snippet>vector &lt;bool, 3&gt; t;</snippet>
+	<snippet>bool3 t; </snippet>
+	<snippet>vector &lt;int, 3&gt;  t;</snippet>
+	<snippet>int3 t;</snippet>
+	<snippet>vector &lt;uint, 3&gt; t;</snippet>
+	<snippet>uint3 t;</snippet>
+	<snippet>vector &lt;half, 3&gt; t;</snippet>
+	<snippet>half3 t;</snippet>
+	<snippet>vector &lt;float, 3&gt; t;</snippet>
+	<snippet>vector &lt;double, 3&gt; t;</snippet>
+	<snippet>double3 t;</snippet>
+	<!-- 4 element vectors -->
+	<snippet>vector &lt;bool, 4&gt; t;</snippet>
+	<snippet>bool4 t; </snippet>
+	<snippet>vector &lt;int, 4&gt;  t;</snippet>
+	<snippet>int4 t;</snippet>
+	<snippet>vector &lt;uint, 4&gt; t;</snippet>
+	<snippet>uint4 t;</snippet>
+	<snippet>vector &lt;half, 4&gt; t;</snippet>
+	<snippet>half4 t;</snippet>
+	<snippet>vector &lt;float, 4&gt; t;</snippet>
+	<snippet>float4 t;</snippet>
+	<snippet>vector &lt;double, 4&gt; t;</snippet>
+	<snippet>double4 t;</snippet>
+	<!-- 1x1 element matrices -->
+	<snippet>matrix &lt;bool, 1, 1&gt; t;</snippet>
+	<snippet>bool1x1 t;</snippet>
+	<snippet>matrix &lt;int, 1, 1&gt; t;</snippet>
+	<snippet>int1x1 t;</snippet>
+	<snippet>matrix &lt;uint, 1, 1&gt;</snippet>
+	<snippet>uint1x1 t;</snippet>
+	<snippet>matrix &lt;half, 1, 1&gt; t;</snippet>
+	<snippet>half1x1 t;</snippet>
+	<snippet>matrix &lt;float, 1, 1&gt; t;</snippet>
+	<snippet>float1x1 t;</snippet>
+	<snippet>matrix &lt;double, 1, 1&gt; t;</snippet>
+	<snippet>double1x1 t;</snippet>
+	<!-- 1x2 element matrices -->
+	<snippet>matrix &lt;bool, 1, 2&gt; t;</snippet>
+	<snippet>bool1x2 t;</snippet>
+	<snippet>matrix &lt;int, 1, 2&gt; t;</snippet>
+	<snippet>int1x2 t;</snippet>
+	<snippet>matrix &lt;uint, 1, 2&gt; t;</snippet>
+	<snippet>uint1x2 t;</snippet>
+	<snippet>matrix &lt;half, 1, 2&gt; t;</snippet>
+	<snippet>half1x2 t;</snippet>
+	<snippet>matrix &lt;float, 1, 2&gt; t;</snippet>
+	<snippet>float1x2 t;</snippet>
+	<snippet>matrix &lt;double, 1, 2&gt; t;</snippet>
+	<snippet>double1x2 t;</snippet>
+	<!-- 1x3 element matrices -->
+	<snippet>matrix &lt;bool, 1, 3&gt; t;</snippet>
+	<snippet>bool1x3 t;</snippet>
+	<snippet>matrix &lt;int, 1, 3&gt; t;</snippet>
+	<snippet>int1x3 t;</snippet>
+	<snippet>matrix &lt;uint, 1, 3&gt; t;</snippet>
+	<snippet>uint1x3 t;</snippet>
+	<snippet>matrix &lt;half, 1, 3&gt; t;</snippet>
+	<snippet>half1x3 t;</snippet>
+	<snippet>matrix &lt;float, 1, 3&gt; t;</snippet>
+	<snippet>float1x3 t;</snippet>
+	<snippet>matrix &lt;double, 1, 3&gt; t;</snippet>
+	<snippet>double1x3 t;</snippet>
+	<!-- 1x4 element matrices -->
+	<snippet>matrix &lt;bool, 1, 4&gt; t;</snippet>
+	<snippet>bool1x4 t;</snippet>
+	<snippet>matrix &lt;int, 1, 4&gt; t;</snippet>
+	<snippet>int1x4 t;</snippet>
+	<snippet>matrix &lt;uint, 1, 4&gt; t;</snippet>
+	<snippet>uint1x4 t;</snippet>
+	<snippet>matrix &lt;half, 1, 4&gt; t;</snippet>
+	<snippet>half1x4 t;</snippet>
+	<snippet>matrix &lt;float, 1, 4&gt; t;</snippet>
+	<snippet>float1x4 t;</snippet>
+	<snippet>matrix &lt;double, 1, 4&gt; t;</snippet>
+	<snippet>double1x4 t;</snippet>
+	<!-- 2x1 element matrices -->
+	<snippet>matrix &lt;bool, 2, 1&gt; t;</snippet>
+	<snippet>bool2x1 t;</snippet>
+	<snippet>matrix &lt;int, 2, 1&gt; t;</snippet>
+	<snippet>int2x1 t;</snippet>
+	<snippet>matrix &lt;uint, 2, 1&gt; t;</snippet>
+	<snippet>uint2x1 t;</snippet>
+	<snippet>matrix &lt;half, 2, 1&gt; t;</snippet>
+	<snippet>half2x1 t;</snippet>
+	<snippet>matrix &lt;float, 2, 1&gt; t;</snippet>
+	<snippet>float2x1 t;</snippet>
+	<snippet>matrix &lt;double, 2, 1&gt; t;</snippet>
+	<snippet>double2x1 t;</snippet>
+	<!-- 2x2 element matrices -->
+	<snippet>matrix &lt;bool, 2, 2&gt; t;</snippet>
+	<snippet>bool2x2 t;</snippet>
+	<snippet>matrix &lt;int, 2, 2&gt; t;</snippet>
+	<snippet>int2x2 t;</snippet>
+	<snippet>matrix &lt;uint, 2, 2&gt; t;</snippet>
+	<snippet>uint2x2 t;</snippet>
+	<snippet>matrix &lt;half, 2, 2&gt; t;</snippet>
+	<snippet>half2x2 t;</snippet>
+	<snippet>matrix &lt;float, 2, 2&gt; t;</snippet>
+	<snippet>float2x2 t;</snippet>
+	<snippet>matrix &lt;double, 2, 2&gt; t;</snippet>
+	<snippet>double2x2 t;</snippet>
+	<!-- 2x3 element matrices -->
+	<snippet>matrix &lt;bool, 2, 3&gt; t;</snippet>
+	<snippet>bool2x3 t;</snippet>
+	<snippet>matrix &lt;int, 2, 3&gt; t;</snippet>
+	<snippet>int2x3 t;</snippet>
+	<snippet>matrix &lt;uint, 2, 3&gt; t;</snippet>
+	<snippet>uint2x3 t;</snippet>
+	<snippet>matrix &lt;half, 2, 3&gt; t;</snippet>
+	<snippet>half2x3 t;</snippet>
+	<snippet>matrix &lt;float, 2, 3&gt; t;</snippet>
+	<snippet>float2x3 t;</snippet>
+	<snippet>matrix &lt;double, 2, 3&gt; t;</snippet>
+	<snippet>double2x3 t;</snippet>
+	<!-- 2x4 element matrices -->
+	<snippet>matrix &lt;bool, 2, 4&gt; t;</snippet>
+	<snippet>bool2x4 t;</snippet>
+	<snippet>matrix &lt;int, 2, 4&gt; t;</snippet>
+	<snippet>int2x4 t;</snippet>
+	<snippet>matrix &lt;uint, 2, 4&gt; t;</snippet>
+	<snippet>uint2x4 t;</snippet>
+	<snippet>matrix &lt;half, 2, 4&gt; t;</snippet>
+	<snippet>half2x4 t;</snippet>
+	<snippet>matrix &lt;float, 2, 4&gt; t;</snippet>
+	<snippet>float2x4 t;</snippet>
+	<snippet>matrix &lt;double, 2, 4&gt; t;</snippet>
+	<snippet>double2x4 t;</snippet>
+	<!-- 3x1 element matrices -->
+	<snippet>matrix &lt;bool, 3, 1&gt; t;</snippet>
+	<snippet>bool3x1 t;</snippet>
+	<snippet>matrix &lt;int, 3, 1&gt; t;</snippet>
+	<snippet>int3x1 t;</snippet>
+	<snippet>matrix &lt;uint, 3, 1&gt; t;</snippet>
+	<snippet>uint3x1 t;</snippet>
+	<snippet>matrix &lt;half, 3, 1&gt; t;</snippet>
+	<snippet>half3x1 t;</snippet>
+	<snippet>matrix &lt;float, 3, 1&gt; t;</snippet>
+	<snippet>float3x1 t;</snippet>
+	<snippet>matrix &lt;double, 3, 1&gt; t;</snippet>
+	<snippet>double3x1 t;</snippet>
+	<!-- 3x2 element matrices -->
+	<snippet>matrix &lt;bool, 3, 2&gt; t;</snippet>
+	<snippet>bool3x2 t;</snippet>
+	<snippet>matrix &lt;int, 3, 2&gt; t;</snippet>
+	<snippet>int3x2 t;</snippet>
+	<snippet>matrix &lt;uint, 3, 2&gt; t;</snippet>
+	<snippet>uint3x2 t;</snippet>
+	<snippet>matrix &lt;half, 3, 2&gt; t;</snippet>
+	<snippet>half3x2 t;</snippet>
+	<snippet>matrix &lt;float, 3, 2&gt; t;</snippet>
+	<snippet>float3x2 t;</snippet>
+	<snippet>matrix &lt;double, 3, 2&gt; t;</snippet>
+	<snippet>double3x2 t;</snippet>
+	<!-- 3x3 element matrices -->
+	<snippet>matrix &lt;bool, 3, 3&gt; t;</snippet>
+	<snippet>bool3x3 t;</snippet>
+	<snippet>matrix &lt;int, 3, 3&gt; t;</snippet>
+	<snippet>int3x3 t;</snippet>
+	<snippet>matrix &lt;uint, 3, 3&gt; t;</snippet>
+	<snippet>uint3x3 t;</snippet>
+	<snippet>matrix &lt;half, 3, 3&gt; t;</snippet>
+	<snippet>half3x3 t;</snippet>
+	<snippet>matrix &lt;float, 3, 3&gt; t;</snippet>
+	<snippet>float3x3 t;</snippet>
+	<snippet>matrix &lt;double, 3, 3&gt; t;</snippet>
+	<snippet>double3x3 t;</snippet>
+	<!-- 3x4 element matrices -->
+	<snippet>matrix &lt;bool, 3, 4&gt; t;</snippet>
+	<snippet>bool3x4 t;</snippet>
+	<snippet>matrix &lt;int, 3, 4&gt; t;</snippet>
+	<snippet>int3x4 t;</snippet>
+	<snippet>matrix &lt;uint, 3, 4&gt; t;</snippet>
+	<snippet>uint3x4 t;</snippet>
+	<snippet>matrix &lt;half, 3, 4&gt;  t;</snippet>
+	<snippet>half3x4 t;</snippet>
+	<snippet>matrix &lt;float, 3, 4&gt; t;</snippet>
+	<snippet>float3x4 t;</snippet>
+	<snippet>matrix &lt;double, 3, 4&gt; t;</snippet>
+	<snippet>double3x4 t;</snippet>
+	<!-- 4x1 element matrices -->
+	<snippet>matrix &lt;bool, 4, 1&gt; t;</snippet>
+	<snippet>bool4x1 t;</snippet>
+	<snippet>matrix &lt;int, 4, 1&gt; t;</snippet>
+	<snippet>int4x1 t;</snippet>
+	<snippet>matrix &lt;uint, 4, 1&gt; t;</snippet>
+	<snippet>uint4x1 t;</snippet>
+	<snippet>matrix &lt;half, 4, 1&gt; t;</snippet>
+	<snippet>half4x1 t;</snippet>
+	<snippet>matrix &lt;float, 4, 1&gt; t;</snippet>
+	<snippet>float4x1 t;</snippet>
+	<snippet> matrix &lt;double, 4, 1&gt; t;</snippet>
+	<snippet>double4x1 t;</snippet>
+	<!-- 4x2 element matrices -->
+	<snippet>matrix &lt;bool, 4, 2&gt; t;</snippet>
+	<snippet>bool4x2 t;</snippet>
+	<snippet>matrix &lt;int, 4, 2&gt; t;</snippet>
+	<snippet>int4x2 t;</snippet>
+	<snippet>matrix &lt;uint, 4, 2&gt; t;</snippet>
+	<snippet>uint4x2 t;</snippet>
+	<snippet>matrix &lt;half, 4, 2&gt; t;</snippet>
+	<snippet>half4x2 t;</snippet>
+	<snippet>matrix &lt;float, 4, 2&gt; t;</snippet>
+	<snippet>float4x2 t;</snippet>
+	<snippet>matrix &lt;double, 4, 2&gt; t;</snippet>
+	<snippet>double4x2 t;</snippet>
+	<!-- 4x3 element matrices -->
+	<snippet>matrix &lt;bool, 4, 3&gt; t;</snippet>
+	<snippet>bool4x3 t;</snippet>
+	<snippet>matrix &lt;int, 4, 3&gt; t;</snippet>
+	<snippet>int4x3 t;</snippet>
+	<snippet>matrix &lt;uint, 4, 3&gt; t;</snippet>
+	<snippet>uint4x3 t;</snippet>
+	<snippet>matrix &lt;half, 4, 3&gt; t;</snippet>
+	<snippet>half4x3 t;</snippet>
+	<snippet>matrix &lt;float, 4, 3&gt; t;</snippet>
+	<snippet>float4x3 t;</snippet>
+	<snippet>matrix &lt;double, 4, 3&gt; t;</snippet>
+	<snippet>double4x3 t;</snippet>
+	<!-- 4x4 element matrices -->
+	<snippet>matrix &lt;bool, 4, 4&gt;  t;</snippet>
+	<snippet>bool4x4 t;</snippet>
+	<snippet>matrix &lt;int, 4, 4&gt; t;</snippet>
+	<snippet>int4x4 t;</snippet>
+	<snippet>matrix &lt;uint, 4, 4&gt; t;</snippet>
+	<snippet>uint4x4 t;</snippet>
+	<snippet>matrix &lt;half, 4, 4&gt; t;</snippet>
+	<snippet>half4x4 t;</snippet>
+	<snippet>matrix &lt;float, 4, 4&gt; t;</snippet>
+	<snippet>float4x4 t;</snippet>
+	<snippet>matrix &lt;double, 4, 4&gt; t;</snippet>
+	<snippet>double4x4 t;</snippet>
+</testset>
+</root>

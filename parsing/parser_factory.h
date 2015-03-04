@@ -1,0 +1,41 @@
+//////////////////////////////////////////////////////////////////////////////
+// Tycho Game Library
+// Copyright (C) 2008 Martin Slater
+// Created : Monday, 5 October 2009 10:29:50 PM
+//////////////////////////////////////////////////////////////////////////////
+#if _MSC_VER > 1000
+#pragma once
+#endif  // _MSC_VER
+
+#ifndef __PARSER_FACTORY_H_F946DA8C_886D_4449_8B87_4C80D7F5621F_
+#define __PARSER_FACTORY_H_F946DA8C_886D_4449_8B87_4C80D7F5621F_
+
+//////////////////////////////////////////////////////////////////////////////
+// INCLUDES
+//////////////////////////////////////////////////////////////////////////////
+#include "slang/slang_abi.h"
+#include "slang/forward_decls.h"
+#include "slang/compiler/slang.h"
+
+
+//////////////////////////////////////////////////////////////////////////////
+// CLASS
+//////////////////////////////////////////////////////////////////////////////
+
+namespace tycho
+{
+namespace slang
+{
+namespace parsing
+{
+
+	struct TYCHO_SLANG_ABI parser_factory
+	{
+		static parser* get_parser(compiler::language_t lang);
+	};
+
+} // end namespace
+} // end namespace
+} // end namespace
+
+#endif // __PARSER_FACTORY_H_F946DA8C_886D_4449_8B87_4C80D7F5621F_

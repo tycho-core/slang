@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<testset name="function_decls_pass">
+		<result>1</result>
+		<test>
+			void f() {}
+		</test>
+		<test>
+			void f(int) {}		
+		</test>
+		<test>
+			void f(int, int) {}		
+		</test>
+		<test>
+			void f(int i) {}
+		</test>
+		<test>
+			void f(int i, float f) {}
+		</test>
+		<test>
+			int f() { return 0; }
+		</test>
+	</testset>
+	<testset name="function_decls_fail">
+		<result>0</result>
+		<test info="multiple definitions">
+			void f() {}
+			void f() {}
+		</test>
+		<test info="undeclared type">
+			void f(foo) {}
+		</test>
+	</testset>
+</root>
