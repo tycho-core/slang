@@ -94,7 +94,7 @@ namespace printing
 				text(str);
 				ediv();
 			}
-			void anchor(int id)
+			void anchor(core::int64 id)
 			{
 				m_doc << "<a name=\"" << id << "\">\n";
 			}			
@@ -109,7 +109,7 @@ namespace printing
 				m_doc << "</a>\n";
 			}
 			
-			void anchor(int id, const char *str)
+			void anchor(core::int64 id, const char *str)
 			{
 				anchor(id);
 				text(str);
@@ -130,7 +130,7 @@ namespace printing
 				eanchor();
 			}	
 			
-			void local_link(int id)
+			void local_link(core::int64 id)
 			{
 				m_doc << "<a href=\"#" << id << "\">\n";
 			}
@@ -145,7 +145,7 @@ namespace printing
 				m_doc << "</a>\n";
 			}
 			
-			void local_link(int id, const char *str)
+			void local_link(core::int64 id, const char *str)
 			{
 				local_link(id);
 				text(str);
@@ -208,7 +208,7 @@ namespace printing
 				etable_data();
 			}
 			
-			void table_data_link_local(const char *id, int anchor_id, const char *str)
+			void table_data_link_local(const char *id, core::int64 anchor_id, const char *str)
 			{
 				table_data(id);
 				local_link(anchor_id, str);
@@ -243,7 +243,7 @@ namespace printing
 				etable_data();
 			}
 
-			void table_data_anchor_local(const char *id, int anchor_id, const char *str)
+			void table_data_anchor_local(const char *id, core::int64 anchor_id, const char *str)
 			{
 				table_data(id);
 				anchor(anchor_id, str);
@@ -730,7 +730,7 @@ namespace printing
 					m_doc.table_data("ast_default", n->get_type_info() ? n->get_type_info()->get_name() : "");
 					
 					if(n->get_id_info())					
-						m_doc.table_data_link_local("ast_default", (std::ptrdiff_t)n->get_id_info(), token.str ? token.str : "");
+						m_doc.table_data_link_local("ast_default", reinterpret_cast<core::int64>(n->get_id_info()), token.str ? token.str : "");
 					else
 						m_doc.table_data("ast_default", token.str ? token.str : "");										
 

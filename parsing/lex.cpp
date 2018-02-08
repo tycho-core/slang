@@ -33,7 +33,7 @@ namespace detail
 
 #if TYCHO_PC
 #pragma warning(push, 3) 
-#pragma warning(disable : 4065 4244 4102)
+#pragma warning(disable : 4065 4244 4102 4267)
 #endif
 
 #define RETURN_TOKEN(_tok)	return _tok
