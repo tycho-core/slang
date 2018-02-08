@@ -1,0 +1,6 @@
+compiler/messages.defs
+compiler/messages.types
+parsing/default_dx10.inl
+parsing/slang_grammar.h
+parsing/slang_grammar.inl
+parsing/slang_lex.inl
