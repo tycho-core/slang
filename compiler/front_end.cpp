@@ -54,7 +54,7 @@ namespace compiler
 			}
 			
 			//TODO : Remove the copy
-			io::memory_stream_ptr istr(new io::memory_stream(buffer, strlen(buffer)));
+			io::memory_stream_ptr istr(new io::memory_stream(buffer, static_cast<int>(strlen(buffer))));
 			lexer lex(np->get_allocator(), istr, filename);
 			p->parse(np, &lex, (compile_flags & comp_trace_parser) != 0);
 			if(np->get_ast())
